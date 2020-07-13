@@ -1,0 +1,31 @@
+{
+  "name": "node-pdns",
+  "version": "1.0.0",
+  "description": "PDNS API Client",
+  "main": "./pdns.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nunokisc/node-pdns.git"
+  },
+  "author": "Nuno Cardoso <nuno.cardoso@ptisp.pt>",
+  "keywords": [
+    "pdns",
+    "pdnsapi",
+    "powerdns"
+  ],
+  "license": "ISC",
+    "bugs": {
+    "url": "https://github.com/nunokisc/node-pdns/issues"
+  },
+  "homepage": "https://github.com/nunokisc/node-pdns#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  }
+}
