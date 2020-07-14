@@ -7,7 +7,25 @@ var config = {
 };
 var pdnsexample = new PDNS(config);
 
-pdnsexample.zones.listAllZonesInServer('locahost', {zone:'teste',dnssec:'true'},function (err, data) {
+/* pdnsexample.zones.listAllZonesInServer('localhost', {zone:'teste',dnssec:'true'},function (err, data) {
+  if (err) {
+    console.log('ERROR');
+    console.log(err);
+  } else {
+    console.log(data);
+  }
+}); */
+
+/* pdnsexample.zones.getZone('localhost', 'prometheus.ptisp.pt.',function (err, data) {
+  if (err) {
+    console.log('ERROR');
+    console.log(err);
+  } else {
+    console.log(data);
+  }
+}); */
+
+pdnsexample.zones.changeZoneRecord('localhost', 'prometheus.ptisp.pt.' , body, function (err, data) {
   if (err) {
     console.log('ERROR');
     console.log(err);
@@ -15,5 +33,3 @@ pdnsexample.zones.listAllZonesInServer('locahost', {zone:'teste',dnssec:'true'},
     console.log(data);
   }
 });
-
-
